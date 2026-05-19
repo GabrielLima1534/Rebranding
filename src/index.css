@@ -106,3 +106,67 @@ img {
 img:hover {
   transform: scale(1.02);
 }
+
+.barra-branding {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.barra-branding span {
+  flex: 1;
+  height: 12px;
+  border-radius: 6px;
+  display: block;
+}
+
+/* cores por posição */
+.barra-branding span:nth-child(1) { background: #00f0ff; }
+.barra-branding span:nth-child(2) { background: #00c8d6; }
+.barra-branding span:nth-child(3) { background: #009fad; }
+.barra-branding span:nth-child(4) { background: #007784; }
+.barra-branding span:nth-child(5) { background: #004f5c; }
+
+/* hover no card */
+.service-card:hover .barra-branding span {
+  transform: scaleY(1.4);
+  box-shadow: 0 0 10px rgba(0,240,255,0.6);
+  transition: 0.25s ease;
+}
+.service-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.orcamento-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 22px;
+  border-radius: 14px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: #fff;
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #FF3C3C, #B31212);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 0 20px rgba(255, 60, 60, 0.25);
+
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.orcamento-btn:hover {
+  background: linear-gradient(90deg, #00F0FF, #0066FF);
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.25);
+
+  transform: translateY(-2px);
+}
+
